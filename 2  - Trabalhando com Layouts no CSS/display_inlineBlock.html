@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha CSS</title>
+    <style>
+        
+        .exemplo{
+            background-color: palegreen;   
+        }
+
+        .inline-block{
+            background-color: bisque;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px;
+        }
+        .menu{
+            background-color: yellowgreen;
+        }
+        .menu ul li{
+            display: inline-block;
+            padding: 20px 40px;
+        }
+        .menu ul li a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade Display</h1>
+    <p>A Propriedade display vai detarminar como as caixinhas retangulares irão se comportar na hora de serem exebidas na tela.</p>
+    
+    <ul>
+        <li>Border-Width</li>
+        <li>Border-Style</li>
+        <li>Border-color</li>
+    </ul>
+    <h2>Exemplos</h2>
+    <code>display: block;</code>
+    <br><br>
+    <div class="exemplo">Exemplo 1</div>
+    <p class="exemplo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis soluta voluptatibus reiciendis, commodi eius maxime numquam placeat ullam ratione id earum optio. Laboriosam, quia. Dolorem fugiat sed illum molestiae nihil?</p>
+    
+    <code>Display Inline </code><br>
+    <p><mark>Não Aceita propriedade Width  e Heith.</mark></p>
+    <span class="exemplo inline">Exemplo Inline 1</span>
+    <span class="exemplo">Exemplo Inline 2</span>
+    <em class="exemplo">Exemplo Inline 3</em>
+    <b class="exemplo">Exemplo Inline 4</b>
+    <p class="exemplo" style="display: inline;">Exemplo Inline 3</p><br><br>
+    
+    <code>Display Inlie Block</code><br><br>
+
+    <span class="inline-block">Exemplo Inline 1</span>
+    <em class="inline-block">Exemplo Inline 2</em>
+    <b class="inline-block">Exemplo Inline 3</b>
+    <span class="inline-block">Exemplo Inline 4</span>
+    <br><br><br>
+
+    <h3>Menu de nav</h3>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Meu link 1</a></li>
+            <li><a href="#">Meu link 2</a></li>
+            <li><a href="#">Meu link 3</a></li>
+        </ul>
+    </nav>
+
+
+</body>
+</html>
