@@ -8,18 +8,24 @@
         .container{
             background: palegreen;
             padding: 20px;
-            display: inline-flex;
+            display: flex;
         }
         .item{
             background: orange;
             margin: 10px;
+        }
+        #container-01{
+            flex-direction: row;
+        }
+        #container-02{
+            flex-direction: column;
         }
     </style>
 </head>
 <body>
     <h1>Flexbox</h1>
 
-    <div class="container">
+    <div class="container"  id="container-01">
         <div class="item">Item 01</div>
         <div class="item">Item 02</div>
         <div class="item">Item 03</div>
@@ -28,9 +34,8 @@
         <div class="item">Item 06</div>
         <div class="item">Item 07</div>
         <div class="item">Item 08</div>
-    </div>
-
-    <div class="container">
+    </div><br>
+    <div class="container" id="container-02">
         <div class="item">Item 01</div>
         <div class="item">Item 02</div>
         <div class="item">Item 03</div>
