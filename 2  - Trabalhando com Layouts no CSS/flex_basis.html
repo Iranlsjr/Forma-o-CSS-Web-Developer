@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flebox - Exemplos</title>
+    <style>
+        .container{
+            background: palegreen;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 200px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .item{
+            background: orange;            
+            width: 100px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .item-02{
+            flex-basis: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+
+    <div class="container">
+        <div class="item item-01">Item 01</div>
+        <div class="item item-02">Item 02</div>
+        <div class="item item-03">Item 03</div>       
+    </div><br>
+    <div class="container">
+        <div class="item item-01">Curto</div>
+        <div class="item item-02">Texto médio</div>
+        <div class="item item-03">Meu Texto loooongo</div>
+  
+    </div>
+</body>
+</html>
