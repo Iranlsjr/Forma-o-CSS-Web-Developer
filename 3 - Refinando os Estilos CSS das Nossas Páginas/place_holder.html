@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+        code{
+            background-color: lightgrey;
+        }
+        input::placeholder{
+            color: lightcoral;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elementos - <code>::place-holder</code></h1>
+    
+    <p>Um placeholder é uma dica pra ajudarno preenchumento de algum campo deformulário.</p>
+    
+    <p>Identificando por <code>::Palavra-chave</code></p>
+    <h2><code>::place-holder</code></h2>
+    
+
+    <details>
+        <summary>Propriedade aceitas:</summary>
+    </details>
+    <ul>
+        <li><code>color</code></li>
+        <li><code>font</code></li>
+        <li><code>background</code></li>
+        <li><code>text</code></li>
+    </ul>
+    <hr>
+    <p>Exemplo</p>
+    
+    <label for="nome">Nome: </label>
+    <input type="text" name="nome" placeholder="Ex: Fulando de Tal">
+
+    <label for="senha">Senha: </label>
+    <input type="password" name="senha" placeholder="Mínimo de10 caracteres">
+
+</body>
+</html>
