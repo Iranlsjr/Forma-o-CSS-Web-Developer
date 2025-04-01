@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+        code{
+            background-color: lightgrey;
+        }
+        summary::marker{
+            color: red;
+            content: "→ ";
+        }
+        li::marker{
+            content: "→ ";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elementos</h1>
+    <p>Identificando por <code>::Palavra-chave</code></p>
+    
+    <h2>Pseudo-Elementos - <code>::marker</code></h2>
+    <p>Permite estilizar os tópicos ou números de uma lista (li) ou então a flecha  de um elemento <code>sumary</code>.</p>
+
+    <details>
+        <summary>Propriedade aceitas:</summary>
+    </details>
+    <ul>
+        <li><code>color</code></li>
+        <li><code>content</code></li>
+        <li><code>white-space</code></li>
+        <li><code>font</code></li>
+        <li><code>animation</code></li>
+        <li><code>transition</code></li>
+    </ul>
+</body>
+</html>
