@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo - Classes</title>
+    <style>
+        p:target{
+            background-color: gold;
+        }
+        p:target::before{
+            content: " ► ";
+            color: red;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes | :target</h1>
+    
+    <h3>Table of contents</h3>
+    <ol>
+        <li><a href="#p1">Pular para o primeiro parágrafo!</a></li>
+        <li><a href="#p2">Pular para o segundo parágrafo!</a></li>
+        <li><a href="#nowhere">Esse linknão vai para nenhum. pois ele não existe!</a></li>
+    </ol>
+    <h3>Meu artigo</h3>
+    <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur unde aperiam corrupti. Officia iusto consequatur inventore vitae. Nemo, nam adipisci. Dolorem, corporis enim exercitationem cum iure itaque dolor natus quis?</p>
+
+    <p id="p2">consequatur  adipisicing</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis eveniet animi quibusdam qui ab quia dicta vitae beatae deleniti necessitatibus voluptatem inventore quae perspiciatis, alias suscipit magni mollitia ad.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis eveniet animi quibusdam qui ab quia dicta vitae beatae deleniti necessitatibus voluptatem inventore quae perspiciatis, alias suscipit magni mollitia ad.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis eveniet animi quibusdam qui ab quia dicta vitae beatae deleniti necessitatibus voluptatem inventore quae perspiciatis, alias suscipit magni mollitia ad.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis eveniet animi quibusdam qui ab quia dicta vitae beatae deleniti necessitatibus voluptatem inventore quae perspiciatis, alias suscipit magni mollitia ad.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis eveniet animi quibusdam qui ab quia dicta vitae beatae deleniti necessitatibus voluptatem inventore quae perspiciatis, alias suscipit magni mollitia ad.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis eveniet animi quibusdam qui ab quia dicta vitae beatae deleniti necessitatibus voluptatem inventore quae perspiciatis, alias suscipit magni mollitia ad.</p>
+</body>
+</html>
