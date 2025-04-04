@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+                body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input[type="checkbox"]:checked + label{
+            text-decoration: line-through;
+        }
+        form label, form button{
+            display: block;
+            margin: 8px 8px 8px 0px;
+        }
+        input{
+            padding: 4px 14px;
+            margin-top: 5px;
+        }
+        form{
+            border: 1px solid gray;
+            border-radius: 4px;
+            width: 300px;
+            padding: 40px;
+            margin: auto;
+            background-color: rgb(247, 247, 247);
+        }
+        form h3{
+            margin: 0;
+        }
+        input{
+            border-style: solid;
+        }
+        input:required{
+            border-color: purple;
+        }
+        input:optional{
+            border-color: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes: :required  e :optional</h1>
+
+    <div>
+        <input type="checkbox" name="task-01">
+        <label for="task-01">:required</label>
+    </div>
+    <div>
+        <input type="checkbox" name="task-02">
+        <label for="task-02">:optional</label>
+    </div>
+    <hr>
+    <form>
+        <h3>Faça sua compra:</h3>
+        <label for="email" required>E-mail:</label>
+        <input type="email" name="email" required>
+
+        <label for="codigo-produto">Código Produto:</label>
+        <input type="number" name="codigo-produto" min="1000" required>
+
+        <label for="cupom">Cupom de Desconto:</label>
+        <input type="cupom" type="text" pattern="[a-z]+" placeholder="Apenas letras minúsculas">
+
+        <label for="data-nascimento">Data Nascismento:</label>
+        <input type="date" name="data-nascimento" min="1962-01-01" max="2004-12-31" required>
+
+
+        <label for="quantidade">Quantidade</label>
+        <input type="number" name="amount" min="3" max="10">
+        <br><br>
+
+        <button type="submit">Comprar</button>
+    </form>
+</body>
+</html>
