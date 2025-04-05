@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transições e Pseudo-elementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(247, 247, 247);
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .list{
+            background-color: #d53369;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 20px 20px 10px lightgrey;
+        }
+        .list li{
+            list-style: none;
+            color: white;
+            font-weight: bold;
+            padding: 12px 32px;
+            margin-bottom: 4px;
+            transition: 1s;
+            
+        }
+        .list li:hover{
+            background-color: #b02151;
+            border-radius: 4px;
+        }
+        .list input{
+            accent-color: #daae51;
+        }
+        .list input:checked + span{
+            text-decoration: line-through;
+        }
+        .list li:has(input:checked){
+            background: #f0ab1a;
+            color: black;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Tomate</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Cogumelo</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Pães</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Pêssego</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Macarrão</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Leite Condesado</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Carne Moída</span>
+            </label>
+        </li>
+    </ul>
+    
+</body>
+</html>
